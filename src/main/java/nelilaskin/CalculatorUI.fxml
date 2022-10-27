@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+      <menus>
+        <Menu fx:id="menuMenu" mnemonicParsing="false" text="Valikko">
+          <items>
+            <MenuItem fx:id="menuQuit" mnemonicParsing="false" onAction="#menuQuitOnAction" text="Sulje" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+         <center>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="allButtonsHBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <VBox fx:id="allButtonsVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox fx:id="buttonRow1HBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="107.0" minWidth="300.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="topRowButton1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#topRowButton1OnAction" text="?" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="topRowButton2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#topRowButton2OnAction" text="?" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="clearButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#clearButtonOnAction" text="C" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="divideButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#divideButtonOnAction" text="/" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="buttonRow2HBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="107.0" minWidth="300.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="number7Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#number7ButtonOnAction" text="7" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="number8Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#number8ButtonOnAction" text="8" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="number9Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#number9ButtonOnAction" text="9" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="productButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#productButtonOnAction" text="*" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="buttonRow3HBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="107.0" minWidth="300.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="number4Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#number4ButtonOnAction" text="4" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="number5Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#number5ButtonOnAction" text="5" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="number6Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#number6ButtonOnAction" text="6" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="minusButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#minusButtonOnAction" text="-" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="buttonRow4HBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="107.0" minWidth="300.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="number1Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#number1ButtonOnAction" text="1" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="number2Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#number2ButtonOnAction" text="2" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="number3Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#number3ButtonOnAction" text="3" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="plusButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#plusButtonOnAction" text="+" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="buttonRow5HBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="107.0" minWidth="300.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="plusMinusButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#plusMinusButtonOnAction" text="+/-" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="number0Button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#number0ButtonOnAction" text="0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="decimalButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#decimalButtonOnAction" text="." HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="resultButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="95.0" minWidth="95.0" mnemonicParsing="false" onAction="#resultButtonOnAction" text="=" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane BorderPane.alignment="CENTER_RIGHT">
+               <children>
+                  <VBox fx:id="resultVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0">
+                     <children>
+                        <Label fx:id="formulaLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="400.0" text="laskukaava" textAlignment="RIGHT">
+                           <font>
+                              <Font name="FreeMono" size="28.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="resultLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" prefHeight="132.0" prefWidth="402.0" text="TULOS" textAlignment="RIGHT">
+                           <font>
+                              <Font name="FreeMono" size="48.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+  </children>
+</VBox>

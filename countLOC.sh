@@ -1,0 +1,1 @@
+git log --after=$1 --before=$2 --author=$3 --pretty=tformat: --shortstat -- src | grep -E "fil(e|es) changed" | awk '{files+=$1; inserted+=$4; deleted+=$6} END {print "files changed: ", files, "lines inserted: ", inserted, "lines deleted: ", deleted }'
